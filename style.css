@@ -10,6 +10,7 @@
     --secondary-color: #ffc05a;
     --light-color: #f9fafb;
     --dark-color: #272d35;
+    --black: #000000;
 }
 
 html, body {
@@ -30,6 +31,9 @@ img {
     max-width: 100%;
 }
 
+
+/* Utility */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -42,11 +46,30 @@ img {
     padding: 0 2rem;
 }
 
+.btn {
+    display: inline-block;
+    border: 1px solid var(--secondary-color);
+    padding: 1.6rem 2.6rem;
+    border-radius: 32px;
+    color: var(--dark-color);
+    background: var(--secondary-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-wrap: nowrap;
+
+}
+
+.btn:hover {
+    color: var(--light-color);
+    background: var(--primary-color);
+    border: var(--primary-color);
+}
+
 
 /* Navbar */
 
 .navbar {
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 1rem 2rem;
     top: 0px;
@@ -66,10 +89,11 @@ img {
 
 .navbar img {
     width: auto;
-    height: 40px;
-    filter: drop-shadow(-4px 8px 9px #ff0055);
+    height: 100px;
+    filter: drop-shadow(10px 8px 9px #befe00e7);
     object-fit: cover;
     display: block;
+    border-radius: 30px;
 
 }
 
@@ -91,6 +115,49 @@ img {
 
 .navbar i {
     font-size: 1.5rem;
+}
+
+/* Hero */
+.hero {
+    background: var(--black) url(images/header-background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11.5rem 2rem 8rem;
+    overflow-x: hidden;
+    position: relative;
+
+}
+
+.hero-flex {
+    display: flex;
+    color: var(--light-color);
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    padding-bottom: 13rem;
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+    /* background-color: #87fc5d; */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+
+}
+
+.hero-content p {
+    line-height: 1.8;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.hero-flex img {
+    width: 100%;
+    margin-right: -100px;
 }
 
 /* Mobile menu */
