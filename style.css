@@ -67,6 +67,19 @@ img {
 }
 
 
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.75rem;
+    background-color: var(--light-color);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .3);
+
+}
+
 /* Navbar */
 
 .navbar {
@@ -220,6 +233,18 @@ img {
     font-size: 1.2rem;
 }
 
+
+.section {
+    margin: 4rem 0;
+
+}
+
+.chapter-cards h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
 /* Section Header */
 
 .section-header {
@@ -266,6 +291,20 @@ img {
     transform: scale(1.1);
 }
 
+
+/* Chapter Cards */
+.chapter-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 0 4rem;
+
+}
+
+.chapter-cards img {
+    width: 130px;
+    margin-top: 1rem;
+}
 
 /* Media query */
 
@@ -315,6 +354,10 @@ img {
 
     .topics {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chapter-cards {
+        grid-template-columns: 1fr;
     }
 }
 
