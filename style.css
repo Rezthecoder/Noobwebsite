@@ -11,6 +11,7 @@
     --light-color: #f9fafb;
     --dark-color: #272d35;
     --black: #000000;
+    --navbar-scroll: rgba(255, 77, 85, .7)
 }
 
 html, body {
@@ -115,6 +116,11 @@ img {
 
 .navbar i {
     font-size: 1.5rem;
+}
+
+.navbar.navbar-scroll {
+    background-color: var(--navbar-scroll);
+    backdrop-filter: blur(10px);
 }
 
 /* Hero */
@@ -259,4 +265,17 @@ img {
 
 @media(max-width:768px) {}
 
-@media(max-width:576px) {}
+@media(max-width:576px) {
+    .hero {
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
