@@ -619,7 +619,84 @@ img {
 }
 
 
+/* Inner header */
 
+.inner-header {
+    background: var(--primary-color);
+    color: #fff;
+    height: 250px;
+    padding-top: 8rem;
+}
+
+.inner-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+/* Contact Form */
+
+.contact-form p {
+    margin-bottom: 3rem;
+}
+
+.contact-form input, .contact-form textarea {
+    font-family: inherit;
+    font-size: medium;
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    border: 1px solid #ccc;
+    padding: 1.2rem 1rem;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0 auto;
+
+}
+
+.container-sm {}
+
+
+
+/* location */
+.location h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.location p {
+    margin-bottom: 2rem;
+}
+
+.location .map {
+    overflow: hidden;
+    position: relative;
+    /* height: 0; */
+    margin-bottom: 3rem;
+    padding-bottom: 50%;
+    border-radius: 0.25rem;
+    background-color: #fc5d66;
+}
+
+.location .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
 
 /* Media query */
 
