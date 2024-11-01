@@ -17,13 +17,15 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="navbar-flex container">
-            <img src="images/logonoob.JPG" alt="noob">
+            <a href="/">
+                <img src="images/logonoob.JPG" alt="noob logo">
+            </a>
             <div class="main-menu-items">
                 <ul class="main-menu-list">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="#chapters">Chapters</a>
@@ -53,13 +55,13 @@
             <!-- Mobile view -->
             <div class="mobile-menu">
                 <!-- Hamburger button -->
-                <div class="mobile-menu-toggle">
+                <div class="mobile-menu-toggle" role="button" aria-expanded="false" aria-controls="mobile-menu-items">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
-                <div class="mobile-menu-items">
+                <div id="mobile-menu-items" class="mobile-menu-items">
                     <ul class="mobile-menu-list">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="#chapters">Chapters</a>
